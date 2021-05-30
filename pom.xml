@@ -134,26 +134,6 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <reporting>
-  <plugins>
-
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-checkstyle-plugin</artifactId>
-      <version>3.1.0</version>
-      <configuration>
-        <configLocation>checkstyle-config.xml</configLocation>
-        <checkstyleXmlOutput>true</checkstyleXmlOutput>
-        <checkstyleXmlOutputDirectory>target/site</checkstyleXmlOutputDirectory>
-        <xmlOutput>true</xmlOutput>
-        <failsOnError>false</failsOnError>
-        <includeTestSourceDirectory>true</includeTestSourceDirectory>
-        <excludes>**/module-info.java,**/package-info.java</excludes>
-      </configuration>
-    </plugin>
-
-  </plugins>
-</reporting>
                 </plugins>
             </build>
         </profile>
